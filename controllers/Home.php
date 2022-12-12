@@ -1,9 +1,19 @@
 <?php
 
-class Home
+class Home extends controller
 {
     public function index()
     {
-        echo "home";
+        $this->loadModel("Homes");
+        $home = $this->Homes->getAll();
+
+        $this->render('home.html', compact('home'));
+        
     }
+
+    public function read($slug)
+    {
+
+    }
+
 }
