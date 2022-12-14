@@ -1,10 +1,10 @@
 <?php
 
-class Homes extends Model
+class HomeModel extends Model
 {
     public function __construct()
     {
-        $this->table = "webtoon";
+        $this->table = "present";
         $this->getConnection();
     }
 

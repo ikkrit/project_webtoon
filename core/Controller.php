@@ -14,7 +14,7 @@ abstract class controller
 
         ob_start();
 
-        require_once(ROOT.'views/'.strtolower(get_class($this)).'/'.$file.'.php');
+        require_once(ROOT.'views/'.$file.'/'.$file.'.html.php');
 
         $content = ob_get_clean();
 

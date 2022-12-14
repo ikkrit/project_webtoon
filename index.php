@@ -9,7 +9,9 @@ $params = explode('/',$_GET['p']);
 
 if($params[0] != "") {
 
-    $controller = ucfirst($params[0]);
+    $controller_params = ucfirst($params[0]);
+
+    $controller = $controller_params.'Controller';
     
     $action = isset($params[1]) ? $params[1] : 'index';
 
@@ -29,11 +31,11 @@ if($params[0] != "") {
 
     } else {
         
-        http_response_code(404);
-        echo "La page demandée n'existe pas";
+        header('Location: error');
     }
 
 } else {
 
+    header('Location: home');
     
 }
