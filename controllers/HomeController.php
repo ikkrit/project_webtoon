@@ -1,26 +1,14 @@
 <?php
 
-class HomeController extends controller
-{
-    public function index()
+    namespace App\Controllers;
+
+    class HomeController extends Controller
     {
-        $this->loadModel("HomeModel");
+        public function index()
+        {
+            $this->render('home/home_index', [], 'home', 'home');
+        }
 
-        $home = $this->HomeModel->getAll();
-
-        $this->render('home');
-
-        /*$this->render('home.html', compact('home'));*/
-        
     }
 
-    public function read($slug)
-    {
-        $this->loadModel('Home');
-
-        $home = $this->Home->findBySlug($slug);
-
-        $this->render('read.html', compact('home'));
-    }
-
-}
+?>

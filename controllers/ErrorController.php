@@ -1,12 +1,13 @@
 <?php
 
-class ErrorController extends controller
-{
-    public function index()
-    {
+    namespace App\Controllers;
 
-        $this->render('error');
-        
+    class ErrorController extends Controller
+    {   
+        public function index()
+        {
+            $this->render('error/error', [], 'main','error');
+        }
     }
 
-}
+?>

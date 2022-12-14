@@ -1,0 +1,113 @@
+.game__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    border-top: 1px solid var(--color-black);
+}
+
+.game__head {
+    height: 100%;
+    width: 100%;
+}
+
+.game__head h2 {
+    text-align: center;
+}
+
+.game__head p {
+    padding: 0 40px;
+}
+
+.game__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: url(/assets/img/game/game_head_1.jpg) center / contain no-repeat;
+    background-size: 100%;
+    color: var(--color-white);
+}
+
+.game__menu a {
+    font-size: 2rem;
+}
+
+
+/********************* GAME START *********************/
+
+.game__start {
+    
+}
+
+.start__intro-img img {
+    width: 100%;
+}
+
+
+.game__start h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.start__container {
+    width: 95%;
+    margin: auto;
+}
+
+.intro__img {
+    width: 100%;
+    display: flex;
+}
+
+.intro__img img {
+    width: 30%;
+    margin: auto;
+}
+
+.start__choice-box {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    margin: 20px auto;
+    background: var(--main-red);
+}
+
+.start__choice-box:hover {
+    border: 1px solid red;
+    background: var(--color-white);
+}
+
+.choice__title h4 {
+    background: var(--color-white);
+    padding: 5px 20px;
+    font-size: 2rem;
+    color: var(--main-red);
+}
+
+.choice__box {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+}
+
+.choice__box a {
+    font-size: 1.2rem;
+    margin: 2px 0;
+    padding: 5px 10px;
+    color: var(--main-red);
+    background: var(--color-white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-box);
+}
+
+.choice__box a:hover {
+    color: var(--color-white);
+    background: var(--main-red);
+}
+
