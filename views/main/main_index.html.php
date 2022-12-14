@@ -6,7 +6,7 @@
 
     </header>
 
-    <video src="/assets/video/main_back.mp4" muted loop autoplay></video>
+    
 
     <div class="showcase__overlay"></div>
 
