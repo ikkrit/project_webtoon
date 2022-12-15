@@ -60,8 +60,6 @@
 
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://kit.fontawesome.com/2cb25f2c39.js"></script>
 <script src="/js/index.js"></script>
 
 </body>
