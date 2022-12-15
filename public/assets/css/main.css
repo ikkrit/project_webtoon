@@ -7,7 +7,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--color-black);
+    background: url(/assets/img/back/main_back.jpg) no-repeat;
+    background-size: cover;
     color: var(--color-white);
     z-index: 2;
     transition: 0.5s;
@@ -30,14 +31,8 @@
     cursor: pointer;
 }
 
-.showcase video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.8;
+.showcase__logo img {
+    height: 70px;
 }
 
 .showcase__overlay {

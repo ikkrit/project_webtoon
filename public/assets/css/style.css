@@ -78,6 +78,10 @@ a {
     color: var(--color-white);
 }
 
+.navbar .logo img {
+    height: 60px;
+}
+
 .navbar ul {
     position: relative;
     display: flex;
@@ -229,7 +233,8 @@ a {
 }
 
 .footer__col-links img {
-    height: 25px;
+    height: 30px;
+    padding-top: 10px;
 }
 
 .footer__col-links a {
