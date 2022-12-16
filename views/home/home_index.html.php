@@ -2,6 +2,23 @@
     <h1 class="home__title">WebMangas</h1>
 
     <div class="home__container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ut laudantium saepe quis in accusamus ex quam molestiae culpa quibusdam obcaecati architecto eligendi pariatur voluptas, quae magnam modi ipsam. Consequuntur.</p>
+
+        <div class="home__box box__one">
+            <?php require_once ROOT.'/Views/home/_home_manga.html.php';?>
+        </div>
+
+        <div class="home__box box__two">
+            <?php require_once ROOT.'/Views/home/_home_manhua.html.php';?>
+        </div>
+
+        <div class="home__box box__three">
+            <?php require_once ROOT.'/Views/home/_home_manhwa.html.php';?>
+        </div>
+
+        <div class="home__box box__four">
+            <?php require_once ROOT.'/Views/home/_home_novel.html.php';?>
+        </div>
+        
     </div>
+
 </section>
