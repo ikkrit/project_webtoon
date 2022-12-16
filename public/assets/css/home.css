@@ -1,34 +1,67 @@
-.home {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 100px;
-    background: var(--main-gray);
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+:root {
+    --red: #E50914;
+    --black: #000;
+    --white: #fff;
+    --light-color: #181818;
+    --box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
 }
 
-.home__title {
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--black);
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo {
+    color: var(--white);
     font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 50px;
+    font-weight: bolder;
 }
 
-.home__contain {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+header .logo i {
+    color: var(--red);
 }
 
-.home__text {
-    width: 50%;
-    padding: 20px 5px;
+header .navbar a {
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    color: var(--white);
 }
 
-.home__img {
-    width: 50%;
+header .navbar a:hover {
+    color: var(--white);
+    background: var(--red);
 }
 
-.home__img img {
-    width: 100%;
-}
+
+
 

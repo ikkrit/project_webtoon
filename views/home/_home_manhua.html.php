@@ -15,4 +15,6 @@
     
     </div>
 
+    <button class="btn__primary"><a href="">En savoir plus</a></button>
+
 </section>
