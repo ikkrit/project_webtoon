@@ -3,20 +3,16 @@
 
     <div class="home__container">
 
-        <div class="home__box box__one">
+        <div class="home__box">
             <?php require_once ROOT.'/Views/home/_home_manga.html.php';?>
         </div>
 
-        <div class="home__box box__two">
+        <div class="home__box">
             <?php require_once ROOT.'/Views/home/_home_manhua.html.php';?>
         </div>
 
-        <div class="home__box box__three">
+        <div class="home__box">
             <?php require_once ROOT.'/Views/home/_home_manhwa.html.php';?>
-        </div>
-
-        <div class="home__box box__four">
-            <?php require_once ROOT.'/Views/home/_home_novel.html.php';?>
         </div>
         
     </div>
