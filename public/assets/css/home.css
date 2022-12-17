@@ -57,9 +57,119 @@ header .navbar a {
     color: var(--white);
 }
 
+header .navbar a.active,
 header .navbar a:hover {
     color: var(--white);
     background: var(--red);
+}
+
+header .icons i,
+header .icons a {
+    cursor: pointer;
+    margin-left: 0.5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--white);
+    border-radius: 50%;
+    background: var(--red);
+}
+
+header .icons i:hover,
+header .icons a:hover {
+    color: var(--red);
+    background: var(--white);
+    transform: rotate(360deg);
+}
+
+header .icons #menu-bars {
+    display: none;
+}
+
+.home {
+    padding: 0;
+}
+
+.home .box {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    background-size: cover !important;
+    background-position: center !important;
+    justify-content: flex-end;
+    padding: 2rem 9%;
+}
+
+.home .box {
+    justify-content: flex-start;
+}
+
+.home .box.second {
+    justify-content: flex-end;
+}
+
+.home .box .content {
+    width: 50rem;
+}
+
+.home .box .content h3 {
+    font-size: 6rem;
+    color: var(--white);
+    padding-top: 0.5rem;
+    text-transform: uppercase;
+}
+
+.home .box .content p {
+    line-height: 2;
+    color: var(--white);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+@media(max-width: 991px) {
+    html {
+        font-size: 55%;
+    } 
+    header {
+        padding: 1rem 2rem;
+    }
+}
+
+@media(max-width: 768px) {
+    header .icons #menu-bars {
+        display: inline-block;
+    }
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--black);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: var(--red);
+    }
+}
+
+@media(max-width: 468px) {
+    html {
+        font-size: 50%;
+    }
 }
 
 
