@@ -26,18 +26,51 @@ html {
     scroll-padding-top: 5.5rem;
 }
 
+body {
+    background-color: var(--light-color);
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+section:nth-child(even) {
+    background: var(--light-color);
+}
+
 header {
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background: var(--black);
     padding: 1rem 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 10000;
-    box-shadow: var(--box-shadow);
+}
+
+.heading {
+    text-align: center;
+    color: var(--red);
+    margin-bottom: 3rem;
+    font-size: 4rem;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: var(--white);
+    background: var(--red);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 0.8rem 3rem;
+}
+
+.btn:hover {
+    background: var(--black);
+    color: var(--red);
+    letter-spacing: 0.1rem;
 }
 
 header .logo {
@@ -128,6 +161,94 @@ header .icons #menu-bars {
     color: var(--white);
     font-size: 1.5rem;
     padding: 1rem 0;
+}
+
+.anime {
+    padding: 5rem;
+}
+
+.anime .box {
+    width: 299px;
+    height: 168px;
+}
+
+.anime .content h3 {
+    font-size: 1.7rem;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.anime .content p {
+    font-size: 1.2rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.action {
+    padding: 5rem;
+}
+
+.action .box {
+    width: 299px;
+    height: 168px;
+}
+
+.action .content h3 {
+    font-size: 1.7rem;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.action .content p {
+    font-size: 1.2rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.child {
+    padding: 5rem;
+}
+
+.child .box {
+    width: 299px;
+    height: 168px;
+}
+
+.child .content h3 {
+    font-size: 1.2rem;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.child .content p {
+    font-size: 1.2rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.family {
+    padding: 5rem;
+}
+
+.family .box {
+    width: 299px;
+    height: 168px;
+}
+
+.family .content h3 {
+    font-size: 1.7rem;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.family .content p {
+    font-size: 1.2rem;
+    color: var(--white);
+    text-decoration: none;
 }
 
 @media(max-width: 991px) {
