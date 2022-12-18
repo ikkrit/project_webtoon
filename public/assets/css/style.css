@@ -19,7 +19,7 @@
     --shadow-box: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-*,
+/**,
 ::before,
 ::after {
     margin: 0;
@@ -41,133 +41,7 @@ li {
 
 a {
     text-decoration: none;
-}
-
-.message__text {
-    position: absolute;
-    display: block;
-    width: 50%;
-    margin: auto;
-    top: 15vh;
-    z-index: 12;
-    text-align: center;
- }
-
-
-/**** NAVBAR GLOBAL****/
-
-
-.navbar {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10%;
-    padding: 10px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--back-color-black);
-    font-family: 'Poppins', sans-serif;
-    z-index: 100;
-}
-
-.navbar .logo {
-    position: relative;
-    font-size: 2.5rem;
-    color: var(--color-white);
-}
-
-.navbar .logo img {
-    height: 60px;
-}
-
-.navbar ul {
-    position: relative;
-    display: flex;
-}
-
-.navbar ul li a {
-    display: inline-block;
-    color: var(--color-white);
-    font-weight: 400;
-    margin-left: 40px;
-    padding-top: 10px;
-}
-
-.thumb {
-    position: absolute;
-    left: 50%;
-    bottom: 20px;
-    transform: translateX(-50%);
-    display: flex;
-}
-
-.thumb li {
-    display: inline-block;
-    margin: 0 20px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.thumb li:hover {
-    transform: translateY(-15px);
-}
-
-.thumb li img {
-    max-width: 60px;
-}
-
-@media (max-width: 991px) {
-    .navbar {
-        padding: 20px;
-    }
-    .navbar .logo {
-        font-size: 2rem;
-    }
-    .navbar ul {
-        display: none;
-    }
-    .navbar ul li a {
-        font-size: 1.5rem;
-        margin: 5px 0;
-    }
-    .toggle {
-        position: relative;
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-        background: url(/assets/img/home/menu.png);
-        background-size: 30px;
-        background-position: center;
-        background-repeat: no-repeat;
-        z-index: 11;
-    }
-    .toggle.active {
-        position: fixed;
-        right: 20px;
-        background: url(/assets/img/home/close.png);
-        background-size: 25px;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    .navbar ul.navigation.active {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background: var(--back-color-black);
-        z-index: 10;
-    }
-    .thumb li img {
-        max-width: 40px;
-    }
-}
+}*/
 
 
 /*====================================== FOOTER ======================================*/

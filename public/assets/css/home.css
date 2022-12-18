@@ -39,6 +39,7 @@ section:nth-child(even) {
 }
 
 header {
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -47,6 +48,7 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 10000;
+    background: var(--black);
 }
 
 .heading {

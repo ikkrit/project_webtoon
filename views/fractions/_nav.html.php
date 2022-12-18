@@ -1,13 +1,18 @@
-<nav class="navbar">
-    <h2 class="logo"><img src="/assets/img/logos/logo.png" alt="logo rpg_nav">WebMangas</h2>
-    <div class="toggle" onclick="toggleMenu();"></div>
+<header>
+        <a href="#" class="logo"><i class="fas fa-infinity"></i>Anime.</a>
 
-    <ul class="navigation">
-        <li><a href="/home">Home</a></li>
-        <li><a href="/about">A propos</a></li>
-        <li><a href="/readonline">Lecture en ligne</a></li>
-        <li><a href="/partner">Partenaire</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
+        <nav class="navbar">
+            <a class="active" href="#home">home</a>
+            <a href="#anime">anime</a>
+            <a href="#action">action</a>
+            <a href="#child">child</a>
+            <a href="#family">family</a>
+        </nav>
 
-</nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+
+    </header>
