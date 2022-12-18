@@ -6,6 +6,8 @@
     --white: #fff;
     --light-color: #181818;
     --box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
+    --transition: all 400ms ease;
+    --radius: 5px;
 }
 
 * {
@@ -28,6 +30,8 @@ html {
 
 body {
     background-color: var(--light-color);
+    max-width: 1600px;
+    margin: auto;
 }
 
 section {
@@ -40,6 +44,8 @@ section:nth-child(even) {
 
 header {
     position: fixed;
+    max-width: 1600px;
+    margin: auto;
     top: 0;
     left: 0;
     right: 0;
@@ -292,6 +298,103 @@ header .icons #menu-bars {
 @media(max-width: 468px) {
     html {
         font-size: 50%;
+    }
+}
+
+
+.footer {
+    background: var(--black);;
+    padding: 70px 20px;
+    border-top: 1px solid var(--white);
+}
+
+.footer__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer__col h4 {
+    font-size: 18px;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer__col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--red);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__list a {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: var(--white);
+    font-weight: 300;
+    display: block;
+    transition: var(--transition);
+}
+
+.footer__list a:hover {
+    color: var(--white);
+    padding-left: 8px;
+}
+
+.footer__col-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer__col-links img {
+    height: 30px;
+    padding-top: 10px;
+}
+
+.footer__col-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: var(--white);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+
+.footer__col-links a:hover {
+    padding-left: 0;
+    background: var(--red);
+}
+
+@media (max-width: 991px) {
+    .footer__col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 468px) {
+    .footer__col {
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
 
