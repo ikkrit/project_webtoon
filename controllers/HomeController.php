@@ -9,6 +9,11 @@
             $this->render('home/home_index', [], 'home', 'home');
         }
 
+        public function download()
+        {
+            $this->render('home/download', [], 'home', 'home');
+        }
+
     }
 
 ?>

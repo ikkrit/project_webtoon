@@ -9,7 +9,7 @@
                         <div class="content">
                             <h3>Kakegurui</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt explicabo fugiat atque? Doloribus numquam, voluptas aperiam ea officiis quam cupiditate quibusdam similique incidunt, tempore accusamus ullam ut, magnam ad? Quis. </p>
-                            <a href="#" class="btn">Download</a>
+                            <a href="/home/download" class="btn">Download</a>
                         </div>
                     </div>
                 </div>

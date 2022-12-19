@@ -43,7 +43,7 @@ section:nth-child(even) {
 }
 
 header {
-    position: fixed;
+    position: a;
     max-width: 1600px;
     margin: auto;
     top: 0;
@@ -300,6 +300,31 @@ header .icons #menu-bars {
         font-size: 50%;
     }
 }
+
+
+/*ABOUT*/
+
+.about {
+    position: relative;
+    margin-top: 2rem;
+    color: var(--white);
+}
+
+.about h2 {
+    display: inline-flex;
+    font-size: 2.4rem;
+    font-weight: 500;
+    border-bottom: 4px solid var(--red);
+}
+
+.about p {
+    display: inline-flex;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+/*FOOTER*/
 
 
 .footer {
