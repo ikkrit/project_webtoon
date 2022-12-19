@@ -266,6 +266,13 @@ header .icons #menu-bars {
     header {
         padding: 1rem 2rem;
     }
+    .slide-size-anime,
+    .slide-size-action,
+    .slide-size-child,
+    .slide-size-family {
+        width: 30% !important;
+        margin: 0 50px !important;
+    }
 }
 
 @media(max-width: 768px) {
@@ -293,11 +300,28 @@ header .icons #menu-bars {
         font-size: 2rem;
         background: var(--red);
     }
+    .slide-size-anime,
+    .slide-size-action,
+    .slide-size-child,
+    .slide-size-family {
+        width: 20% !important;
+        margin: 0 50px !important;
+    }
+    .content-text {
+        display: none !important;
+    }
 }
 
 @media(max-width: 468px) {
     html {
         font-size: 50%;
+    }
+    .slide-size-anime,
+    .slide-size-action,
+    .slide-size-child,
+    .slide-size-family {
+        width: 50% !important;
+        margin: 0 50px !important;
     }
 }
 
