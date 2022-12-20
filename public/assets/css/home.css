@@ -43,7 +43,7 @@ section:nth-child(even) {
 }
 
 header {
-    position: a;
+    position: absolute;
     max-width: 1600px;
     margin: auto;
     top: 0;
@@ -259,6 +259,16 @@ header .icons #menu-bars {
     text-decoration: none;
 }
 
+@media(max-width: 1340px) {
+    .slide-size-anime,
+    .slide-size-action,
+    .slide-size-child,
+    .slide-size-family {
+        width: 30% !important;
+        margin: 0 10px !important;
+    }
+}
+
 @media(max-width: 991px) {
     html {
         font-size: 55%;
@@ -270,7 +280,6 @@ header .icons #menu-bars {
     .slide-size-action,
     .slide-size-child,
     .slide-size-family {
-        width: 30% !important;
         margin: 0 50px !important;
     }
 }
@@ -304,8 +313,8 @@ header .icons #menu-bars {
     .slide-size-action,
     .slide-size-child,
     .slide-size-family {
-        width: 20% !important;
-        margin: 0 50px !important;
+        width: 100% !important;
+        margin: 0 10px !important;
     }
     .content-text {
         display: none !important;
@@ -320,8 +329,8 @@ header .icons #menu-bars {
     .slide-size-action,
     .slide-size-child,
     .slide-size-family {
-        width: 50% !important;
-        margin: 0 50px !important;
+        width: 100% !important;
+        justify-content: center;
     }
 }
 
